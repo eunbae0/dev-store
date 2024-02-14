@@ -24,7 +24,7 @@ jobs:
           corepack-enable: true
           cache: yarn
       - uses: Enable corepack
-        with: |
+        run: |
           corepack enable
           corepack prepare yarn@4.1.0 --activate
           yarn set version 4.1.0
