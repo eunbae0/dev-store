@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkfe_store=self.webpackChunkfe_store||[]).push([[840],{6968:e=>{e.exports=JSON.parse('{"title":"Clean Code","description":"\ud074\ub9b0\ucf54\ub4dc","slug":"/category/clean-code","permalink":"/docs/category/clean-code","navigation":{"next":{"title":"Refactoring","permalink":"/docs/etc/cleanCode/sementic_tag"}}}')}}]);
