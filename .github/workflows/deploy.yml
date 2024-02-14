@@ -23,7 +23,7 @@ jobs:
           node-version: 18
           corepack-enable: true
           cache: yarn
-      - uses: Enable corepack
+      - name: Enable corepack
         run: |
           corepack enable
           corepack prepare yarn@4.1.0 --activate
