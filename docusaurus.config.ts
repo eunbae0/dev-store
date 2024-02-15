@@ -5,7 +5,7 @@ import { themes as prismThemes } from "prism-react-renderer";
 /** @type {import('@docusaurus/types').Config} */
 const config: Config = {
 	title: "FE 지식창고",
-	tagline: "Dinosaurs are cool",
+	tagline: "Front-end의 전반적인 지식을 담는 공간입니다.",
 	favicon: "img/favicon.ico",
 
 	// Set the production url of your site here
@@ -109,6 +109,9 @@ const config: Config = {
 		prism: {
 			theme: prismThemes.github,
 			darkTheme: prismThemes.dracula,
+		},
+		colorMode: {
+			defaultMode: "dark",
 		},
 	} satisfies Preset.ThemeConfig,
 };
