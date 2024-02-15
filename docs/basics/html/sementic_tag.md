@@ -2,7 +2,7 @@
 
 포함된 콘텐츠의 특정 의미를 정의하고 목적을 갖는 태그를 Sementic Tag라 한다.
 
-Tag에는 header, nav, section, article, main, footer 등 이 있다.
+시맨틱 태그에는 header, nav, section, article, main, footer 등 이 있다.
 
 ## 시맨틱 태그 요소
 
@@ -28,30 +28,6 @@ Tag에는 header, nav, section, article, main, footer 등 이 있다.
 
 문서 또는 섹션의 바닥글을 지정하며, 문서의 아래 쪽에 위치하는 태그.
 일반적으로 연락처 정보, 사이트맵, 웹사이트를 하나로 묶고 SEO를 강화하는 데 도움이 되는 소셜 미디어 사이트에 대한 링크와 같은 추가 링크가 포함된다.
-
-### 텍스트 서식 관련 태그
-
-#### strong
-
-#### em(emphasize)
-
-#### mark(highlight)
-
-#### del
-
-#### ins
-
-#### sub, sup
-
-#### blackquote
-
-#### q
-
-#### abbr
-
-#### address
-
-#### cite
 
 ## 시맨틱 태그를 사용해야하는 이유
 
