@@ -1,0 +1,8 @@
+{
+	"label": "Performance Optimization",
+	"position": 1,
+	"link": {
+		"type": "generated-index",
+		"description": "Front-end 성능 최적화"
+	}
+}
