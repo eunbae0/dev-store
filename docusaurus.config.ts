@@ -70,12 +70,12 @@ const config: Config = {
 					position: "left",
 					label: "Basics",
 				},
-				{
-					type: "docSidebar",
-					sidebarId: "csSidebar",
-					position: "left",
-					label: "CS",
-				},
+				// {
+				// 	type: "docSidebar",
+				// 	sidebarId: "csSidebar",
+				// 	position: "left",
+				// 	label: "CS",
+				// },
 				{
 					type: "docSidebar",
 					sidebarId: "etcSidebar",
