@@ -5,7 +5,8 @@ import { themes as prismThemes } from "prism-react-renderer";
 /** @type {import('@docusaurus/types').Config} */
 const config: Config = {
 	title: "Dev Store",
-	tagline: "전반적인 개발 지식을 담는 공간.",
+	tagline:
+		"전반적인 개발 지식을 담는 공간. 공부한 것을 까먹을 수 있기 때문에 한 곳에 정리합니다.",
 	favicon: "img/favicon.ico",
 
 	// Set the production url of your site here
