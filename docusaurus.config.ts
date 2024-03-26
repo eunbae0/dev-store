@@ -6,19 +6,19 @@ import { themes as prismThemes } from "prism-react-renderer";
 const config: Config = {
 	title: "Dev Store",
 	tagline:
-		"전반적인 개발 지식을 담는 공간. 공부한 것을 까먹을 수 있기 때문에 한 곳에 정리합니다.",
+		"전반적인 개발 지식을 담는 공간. 습득한 내용을 까먹을 수 있기에 자주 사용하거나, 중요한 기초 지식 등을 정리합니다.",
 	favicon: "img/favicon.ico",
 
 	// Set the production url of your site here
 	url: "https://your-docusaurus-site.example.com",
 	// Set the /<baseUrl>/ pathname under which your site is served
 	// For GitHub pages deployment, it is often '/<projectName>/'
-	baseUrl: "/fe-store/",
+	baseUrl: "/dev-store/",
 
 	// GitHub pages deployment config.
 	// If you aren't using GitHub pages, you don't need these.
 	organizationName: "eunbae0", // Usually your GitHub org/user name.
-	projectName: "fe-store", // Usually your repo name.
+	projectName: "dev-store", // Usually your repo name.
 
 	onBrokenLinks: "throw",
 	onBrokenMarkdownLinks: "warn",
@@ -39,7 +39,7 @@ const config: Config = {
 					sidebarPath: "./sidebars.ts",
 					// Please change this to your repo.
 					// Remove this to remove the "edit this page" links.
-					editUrl: "https://github.com/eunbae0/fe-store/tree/main/",
+					editUrl: "https://github.com/eunbae0/dev-store/tree/main/",
 				},
 				// blog: {
 				// 	showReadingTime: true,
