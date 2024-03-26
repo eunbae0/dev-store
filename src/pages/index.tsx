@@ -15,13 +15,31 @@ function HomepageHeader() {
 				<Heading as="h1" className="hero__title">
 					{siteConfig.title}
 				</Heading>
-				<div className={styles.buttons}>
-					<Link
-						className="button button--secondary button--lg"
-						to="/docs/basics/intro"
-					>
-						FE Basics 살펴보기 →
-					</Link>
+				<div className={styles.buttonsWrapper}>
+					<div className={styles.buttons}>
+						<Link
+							className="button button--secondary button--lg"
+							to="/docs/basics/intro"
+						>
+							FE Basics 살펴보기 →
+						</Link>
+					</div>
+					<div className={styles.buttons}>
+						<Link
+							className="button button--secondary button--lg"
+							to="/docs/advances/intro"
+						>
+							FE Advances 살펴보기 →
+						</Link>
+					</div>
+					<div className={styles.buttons}>
+						<Link
+							className="button button--secondary button--lg"
+							to="/docs/cs/intro"
+						>
+							CS 살펴보기 →
+						</Link>
+					</div>
 				</div>
 			</div>
 		</header>
