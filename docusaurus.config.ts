@@ -91,6 +91,12 @@ const config: Config = {
 				},
 				{
 					type: "docSidebar",
+					sidebarId: "booksSidebar",
+					position: "left",
+					label: "Books",
+				},
+				{
+					type: "docSidebar",
 					sidebarId: "etcSidebar",
 					position: "left",
 					label: "ETC",
