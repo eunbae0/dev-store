@@ -4,8 +4,8 @@ import { themes as prismThemes } from "prism-react-renderer";
 
 /** @type {import('@docusaurus/types').Config} */
 const config: Config = {
-	title: "FE 지식창고",
-	tagline: "Front-end의 전반적인 지식을 담는 공간입니다.",
+	title: "Dev Store",
+	tagline: "전반적인 개발 지식을 담는 공간.",
 	favicon: "img/favicon.ico",
 
 	// Set the production url of your site here
@@ -58,7 +58,7 @@ const config: Config = {
 		// Replace with your project's social card
 		image: "img/docusaurus-social-card.jpg",
 		navbar: {
-			title: "FE 지식창고",
+			title: "Dev Store",
 			logo: {
 				alt: "My Site Logo",
 				src: "img/logo.svg",
@@ -66,21 +66,33 @@ const config: Config = {
 			items: [
 				{
 					type: "docSidebar",
-					sidebarId: "basicsSidebar",
+					sidebarId: "feBasicsSidebar",
 					position: "left",
-					label: "Basics",
+					label: "FE Basics",
 				},
-				// {
-				// 	type: "docSidebar",
-				// 	sidebarId: "csSidebar",
-				// 	position: "left",
-				// 	label: "CS",
-				// },
+				{
+					type: "docSidebar",
+					sidebarId: "feAdvancesSidebar",
+					position: "left",
+					label: "FE Advances",
+				},
+				{
+					type: "docSidebar",
+					sidebarId: "beSidebar",
+					position: "left",
+					label: "Backend",
+				},
+				{
+					type: "docSidebar",
+					sidebarId: "csSidebar",
+					position: "left",
+					label: "CS",
+				},
 				{
 					type: "docSidebar",
 					sidebarId: "etcSidebar",
 					position: "left",
-					label: "Etc",
+					label: "ETC",
 				},
 			],
 		},

@@ -1,0 +1,8 @@
+{
+	"label": "Git",
+	"position": 1,
+	"link": {
+		"type": "generated-index",
+		"description": "git 사용시 까먹을 수 있는 자주 사용하는 명령어를 정리합니다."
+	}
+}

@@ -4888,6 +4888,24 @@ __metadata:
   languageName: node
   linkType: hard
 
+"dev-store@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "dev-store@workspace:."
+  dependencies:
+    "@docusaurus/core": "npm:3.1.1"
+    "@docusaurus/module-type-aliases": "npm:^3.1.1"
+    "@docusaurus/preset-classic": "npm:3.1.1"
+    "@docusaurus/tsconfig": "npm:^3.1.1"
+    "@docusaurus/types": "npm:^3.1.1"
+    "@mdx-js/react": "npm:^3.0.0"
+    clsx: "npm:^2.0.0"
+    prism-react-renderer: "npm:^2.3.0"
+    react: "npm:^18.0.0"
+    react-dom: "npm:^18.0.0"
+    typescript: "npm:^5.3.3"
+  languageName: unknown
+  linkType: soft
+
 "devlop@npm:^1.0.0, devlop@npm:^1.1.0":
   version: 1.1.0
   resolution: "devlop@npm:1.1.0"
@@ -5500,24 +5518,6 @@ __metadata:
   checksum: 10c0/c6052a0bb322778ce9f89af92890f6f4ce00d5ec92418a35e5f4c6864a4fe736fec0bcebd47eac7c0f0e979b01530746b1c85c83cb04bae789271abf19737420
   languageName: node
   linkType: hard
-
-"fe-store@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "fe-store@workspace:."
-  dependencies:
-    "@docusaurus/core": "npm:3.1.1"
-    "@docusaurus/module-type-aliases": "npm:^3.1.1"
-    "@docusaurus/preset-classic": "npm:3.1.1"
-    "@docusaurus/tsconfig": "npm:^3.1.1"
-    "@docusaurus/types": "npm:^3.1.1"
-    "@mdx-js/react": "npm:^3.0.0"
-    clsx: "npm:^2.0.0"
-    prism-react-renderer: "npm:^2.3.0"
-    react: "npm:^18.0.0"
-    react-dom: "npm:^18.0.0"
-    typescript: "npm:^5.3.3"
-  languageName: unknown
-  linkType: soft
 
 "feed@npm:^4.2.2":
   version: 4.2.2
