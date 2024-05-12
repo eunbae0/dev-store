@@ -29,7 +29,7 @@ function HomepageHeader() {
 							className="button button--secondary button--lg"
 							to="/docs/basics/intro"
 						>
-							FE Advances 살펴보기 →
+							FE Basics 살펴보기 →
 						</Link>
 					</div>
 					<div className={styles.buttons}>
