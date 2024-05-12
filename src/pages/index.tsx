@@ -19,15 +19,15 @@ function HomepageHeader() {
 					<div className={styles.buttons}>
 						<Link
 							className="button button--secondary button--lg"
-							to="/docs/basics/intro"
+							to="/docs/ios/intro"
 						>
-							FE Basics 살펴보기 →
+							iOS 살펴보기 →
 						</Link>
 					</div>
 					<div className={styles.buttons}>
 						<Link
 							className="button button--secondary button--lg"
-							to="/docs/advances/intro"
+							to="/docs/basics/intro"
 						>
 							FE Advances 살펴보기 →
 						</Link>

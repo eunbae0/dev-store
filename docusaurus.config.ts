@@ -67,6 +67,12 @@ const config: Config = {
 			items: [
 				{
 					type: "docSidebar",
+					sidebarId: "iosSidebar",
+					position: "left",
+					label: "iOS",
+				},
+				{
+					type: "docSidebar",
 					sidebarId: "feBasicsSidebar",
 					position: "left",
 					label: "FE Basics",
@@ -82,12 +88,6 @@ const config: Config = {
 					sidebarId: "rnSidebar",
 					position: "left",
 					label: "RN",
-				},
-				{
-					type: "docSidebar",
-					sidebarId: "beSidebar",
-					position: "left",
-					label: "Backend",
 				},
 				{
 					type: "docSidebar",
