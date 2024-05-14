@@ -26,7 +26,7 @@
 
 ```swift
 class ...
-  deinit()
+  deinit {}
 ```
 
 - 참조 카운팅은 하나 이상의 클래스 인스턴스 참조를 허락한다. (Reference Type)
