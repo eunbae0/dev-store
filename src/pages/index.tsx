@@ -19,17 +19,9 @@ function HomepageHeader() {
 					<div className={styles.buttons}>
 						<Link
 							className="button button--secondary button--lg"
-							to="/docs/ios/intro"
+							to="/docs/react_native/intro"
 						>
-							iOS 살펴보기 →
-						</Link>
-					</div>
-					<div className={styles.buttons}>
-						<Link
-							className="button button--secondary button--lg"
-							to="/docs/basics/intro"
-						>
-							FE Basics 살펴보기 →
+							React Native 살펴보기 →
 						</Link>
 					</div>
 					<div className={styles.buttons}>

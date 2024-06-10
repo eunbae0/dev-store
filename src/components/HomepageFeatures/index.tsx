@@ -2,6 +2,7 @@ import clsx from "clsx";
 import Heading from "@theme/Heading";
 import styles from "./styles.module.css";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
+import Link from "@docusaurus/Link";
 
 // const FeatureList = [
 //   {
@@ -55,7 +56,15 @@ export default function HomepageFeatures() {
 	return (
 		<section className={styles.features}>
 			<div className="container">
+				<Heading as="h2">소개</Heading>
 				<Heading as="h3">{siteConfig.tagline}</Heading>
+				<div style={{ height: 14 }} />
+				<Heading as="h2">읽어볼만한 글</Heading>
+				<Heading as="h3">
+					<Link to="/docs/category/react-native-optimization">
+						React Native Optimization
+					</Link>
+				</Heading>
 			</div>
 		</section>
 	);
