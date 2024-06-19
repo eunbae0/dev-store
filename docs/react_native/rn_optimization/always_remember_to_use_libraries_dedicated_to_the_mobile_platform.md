@@ -1,6 +1,6 @@
 # Always remember to use libraries dedicated to the mobile platform
 
-## a
+## Mobile에 최적화되지 않은 Web Library를 사용할 수 있습니다.
 
 React Native는 JS로 모바일 앱을 작성하거나, React component를 재사용하거나, 좋아하는 상태 관리 라이브러리를 이용하여 비즈니스 로직을 작성할 수 있는 것이 장점입니다.
 
