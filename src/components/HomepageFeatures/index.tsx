@@ -61,6 +61,9 @@ export default function HomepageFeatures() {
 				<div style={{ height: 14 }} />
 				<Heading as="h2">읽어볼만한 글</Heading>
 				<Heading as="h3">
+					<Link to="/docs/basics/javascript/v8_engine">JS V8 Engine</Link>
+				</Heading>
+				<Heading as="h3">
 					<Link to="/docs/category/react-native-optimization">
 						React Native Optimization
 					</Link>
