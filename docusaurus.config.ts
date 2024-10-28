@@ -91,6 +91,12 @@ const config: Config = {
 				},
 				{
 					type: "docSidebar",
+					sidebarId: "rustSidebar",
+					position: "left",
+					label: "Rust",
+				},
+				{
+					type: "docSidebar",
 					sidebarId: "csSidebar",
 					position: "left",
 					label: "CS",
@@ -118,6 +124,18 @@ const config: Config = {
 						{
 							label: "FE",
 							to: "/docs/fe/intro",
+						},
+						{
+							label: "RN",
+							to: "/docs/react_native/intro",
+						},
+						{
+							label: "iOS",
+							to: "/docs/ios/intro",
+						},
+						{
+							label: "Android",
+							to: "/docs/android/intro",
 						},
 					],
 				},
