@@ -1,6 +1,6 @@
 {
 	"label": "Error Log",
-	"position": 4,
+	"position": 5,
 	"link": {
 		"type": "generated-index",
 		"description": "iOS 개발 시 에러 로그"
