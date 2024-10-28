@@ -67,15 +67,9 @@ const config: Config = {
 			items: [
 				{
 					type: "docSidebar",
-					sidebarId: "feBasicsSidebar",
+					sidebarId: "feSidebar",
 					position: "left",
-					label: "FE Basics",
-				},
-				{
-					type: "docSidebar",
-					sidebarId: "feAdvancesSidebar",
-					position: "left",
-					label: "FE Advances",
+					label: "FE",
 				},
 				{
 					type: "docSidebar",
@@ -122,8 +116,8 @@ const config: Config = {
 					title: "Docs",
 					items: [
 						{
-							label: "Basics",
-							to: "/docs/basics/intro",
+							label: "FE",
+							to: "/docs/fe/intro",
 						},
 					],
 				},
