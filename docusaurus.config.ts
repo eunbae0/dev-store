@@ -73,6 +73,12 @@ const config: Config = {
 				},
 				{
 					type: "docSidebar",
+					sidebarId: "nodeJsSidebar",
+					position: "left",
+					label: "Node.js",
+				},
+				{
+					type: "docSidebar",
 					sidebarId: "rnSidebar",
 					position: "left",
 					label: "RN",
@@ -124,6 +130,10 @@ const config: Config = {
 						{
 							label: "FE",
 							to: "/docs/fe/intro",
+						},
+						{
+							label: "Node.js",
+							to: "/docs/node_js/intro",
 						},
 						{
 							label: "RN",
