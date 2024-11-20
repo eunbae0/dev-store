@@ -64,6 +64,9 @@ export default function HomepageFeatures() {
 					<Link to="/docs/node_js/engine/v8_engine">JS V8 Engine</Link>
 				</Heading>
 				<Heading as="h3">
+					<Link to="/docs/category/swiftui">Swift UI</Link>
+				</Heading>
+				<Heading as="h3">
 					<Link to="/docs/category/react-native-optimization">
 						React Native Optimization
 					</Link>
