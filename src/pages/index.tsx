@@ -3,6 +3,7 @@ import Link from "@docusaurus/Link";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
 import HomepageFeatures from "@site/src/components/HomepageFeatures";
+import useBaseUrl from "@docusaurus/useBaseUrl";
 
 import Heading from "@theme/Heading";
 import styles from "./index.module.css";
@@ -12,9 +13,22 @@ function HomepageHeader() {
 	return (
 		<header className={clsx("hero hero--primary", styles.heroBanner)}>
 			<div className="container">
-				<Heading as="h1" className="hero__title">
-					{siteConfig.title}
-				</Heading>
+				<div
+					style={{
+						display: "flex",
+						alignItems: "center",
+						justifyContent: "center",
+						gap: 8,
+					}}
+				>
+					<Heading as="h1" className="hero__title">
+						{siteConfig.title}
+					</Heading>
+					<img
+						src={useBaseUrl("/img/favicon.ico")}
+						style={{ width: "48px", paddingBottom: 10 }}
+					/>
+				</div>
 				<div className={styles.buttonsWrapper}>
 					<div className={styles.buttons}>
 						<Link
