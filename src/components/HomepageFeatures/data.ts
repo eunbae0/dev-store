@@ -1,5 +1,12 @@
 export const RecommendedArticleList = [
 	{
+		to: "docs/node_js/bundler/webpack/css_order_issue",
+		title: "Deep dive into webpack CSS order issue",
+		image: "/img/css_order_issue.png",
+		description:
+			"많은 사람들이 Webpack에서 CSS의 순서가 예상과 다르게 동작해 스타일이 올바르게 적용되지 않는 문제를 겪고 있다고 보고합니다. 사실 Webpack에서 CSS의 순서는 splitChunks 설정과 관련이 있으며, 매우 불안정합니다. 예를 들어, JS 모듈이 a.css를 먼저 import한 후 b.css를 import하더라도, splitChunks를 설정하면 최종적으로 a와 b의 순서가 import 순서와 완전히 다를 수 있습니다.",
+	},
+	{
 		to: "docs/category/swiftui",
 		title: "SwiftUI",
 		image: "/img/swiftui.png",
