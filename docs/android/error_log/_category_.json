@@ -1,8 +1,8 @@
 {
-	"label": "TIL",
+	"label": "Error Log",
 	"position": 2,
 	"link": {
 		"type": "generated-index",
-		"description": "Android TIL"
+		"description": "Android Error Log"
 	}
 }
