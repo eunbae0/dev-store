@@ -101,9 +101,9 @@ const config: Config = {
 				},
 				{
 					type: "docSidebar",
-					sidebarId: "rustSidebar",
+					sidebarId: "projectsSidebar",
 					position: "left",
-					label: "Rust",
+					label: "Projects",
 				},
 				{
 					type: "docSidebar",

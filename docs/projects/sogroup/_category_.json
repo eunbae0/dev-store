@@ -1,0 +1,8 @@
+{
+	"label": "소그룹",
+	"position": 5,
+	"link": {
+		"type": "generated-index",
+		"description": "소그룹 개발 일지"
+	}
+}
