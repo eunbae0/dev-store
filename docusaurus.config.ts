@@ -141,7 +141,7 @@ const config: Config = {
 						},
 						{
 							label: "RN",
-							to: "/docs/react_native/intro",
+							to: "/docs/category/common",
 						},
 						{
 							label: "iOS",
