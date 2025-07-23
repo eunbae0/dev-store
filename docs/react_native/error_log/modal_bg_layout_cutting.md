@@ -1,6 +1,6 @@
 # 모달의 background가 잘려서 보이는 문제
 
-![modal_bg_layout_cutting](modal_bg_layout_cutting.jpeg)
+![modal_bg_layout_cutting](./img/modal_bg_layout_cutting.jpeg)
 
 위 화면처럼 모달의 background가 잘려서 보이는 문제가 발생
 
