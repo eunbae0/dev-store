@@ -1,8 +1,8 @@
 {
-	"label": "소그룹",
+	"label": "만나",
 	"position": 5,
 	"link": {
 		"type": "generated-index",
-		"description": "소그룹 개발 일지. 소그룹 앱의 개발과 출시, 개선 과정을 기록합니다."
+		"description": "만나 개발 일지. 만나 앱의 개발과 출시, 개선 과정을 기록합니다."
 	}
 }

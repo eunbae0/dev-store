@@ -23,9 +23,6 @@ export default function HomepageFeatures() {
 	return (
 		<section className={styles.features}>
 			<div className="container">
-				<Heading as="h2">소개</Heading>
-				<div className={styles.spacer} />
-				<Heading as="h3">{siteConfig.tagline}</Heading>
 				<div style={{ height: 14 }} />
 				<Heading as="h2">읽어볼만한 글</Heading>
 				<div className={styles.spacer} />

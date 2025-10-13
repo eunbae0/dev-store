@@ -1,8 +1,16 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:is([data-theme="dark"] *));
+
 /**
  * Any CSS included here will be global. The classic template
  * bundles Infima by default. Infima is a CSS framework designed to
  * work well for content-centric websites.
  */
+
+html {
+	scroll-behavior: smooth;
+}
 
 /* You can override the default Infima variables here. */
 :root {
@@ -37,4 +45,14 @@
 	margin: 0 calc(-1 * var(--ifm-pre-padding));
 	padding: 0 var(--ifm-pre-padding);
 	border-left: 3px solid #ff000080;
+}
+
+@layer utilities {
+	.scrollbar-hide {
+		-ms-overflow-style: none; /* IE, Edge */
+		scrollbar-width: none; /* Firefox */
+	}
+	.scrollbar-hide::-webkit-scrollbar {
+		display: none; /* Chrome, Safari, Opera */
+	}
 }

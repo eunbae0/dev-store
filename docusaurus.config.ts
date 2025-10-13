@@ -31,6 +31,8 @@ const config: Config = {
 		locales: ["ko"],
 	},
 
+	plugins: ["./src/plugins/tailwind-config.js"],
+
 	presets: [
 		[
 			"classic",
@@ -123,6 +125,22 @@ const config: Config = {
 					position: "left",
 					label: "ETC",
 				},
+				{
+					href: "/portfolio",
+					position: "right",
+					label: "Portfolio",
+				},
+				{
+					href: "https://devpluto.tistory.com/",
+					label: "Blog",
+					position: "right",
+				},
+				{
+					href: "https://github.com/facebook/docusaurus",
+					position: "right",
+					className: "header-github-link",
+					"aria-label": "GitHub repository",
+				},
 			],
 		},
 		footer: {
@@ -186,6 +204,11 @@ const config: Config = {
 		},
 		colorMode: {
 			defaultMode: "dark",
+		},
+		future: {
+			v4: {
+				useCssCascadeLayers: false,
+			},
 		},
 	} satisfies Preset.ThemeConfig,
 };

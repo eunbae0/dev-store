@@ -1,9 +1,9 @@
 export const RecommendedArticleList = [
 	{
-		to: "docs/category/소그룹",
-		title: "소그룹 앱 개발일지",
+		to: "docs/category/만나",
+		title: "만나 앱 개발일지",
 		image: "/img/sogroup_icon.png",
-		description: "소그룹 앱의 개발과 출시, 개선 과정을 기록합니다.",
+		description: "만나 앱의 개발과 출시, 개선 과정을 기록합니다.",
 	},
 	{
 		to: "docs/node_js/bundler/webpack/css_order_issue",
