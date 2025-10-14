@@ -598,7 +598,7 @@ const projects = [
 			"터닝 앱 개편 프로젝트에서 SwiftUI를 이용해 다양한 화면 및 기능 개발",
 		category: "Hustlers",
 		period: "2024.09 ~ 2024.11",
-		imageUrl: "/img/portfolio/hustlers_01.png",
+		imageUrl: "/img/portfolio/projects/1/main.png",
 		technologies: ["Swift", "SwiftUI"],
 		links: [
 			{
@@ -820,7 +820,7 @@ codepush를 통한 앱 업데이트 중 화면
 		description:
 			"다양한 서비스(도서관 좌석 예약·랭킹, 이용 내역 Recap, 숨은 학점 등)와 시대팅(webview)·팀페이지·블로그·백오피스까지 전반 개발",
 		category: "시대생",
-		imageUrl: "https://picsum.photos/seed/freelance2/600/400",
+		imageUrl: "/img/portfolio/projects/4/main.png",
 		technologies: ["React Native(Bare)", "TS"],
 		links: [],
 		content: `# 시대생 앱 유지보수
@@ -899,13 +899,17 @@ codepush를 통한 앱 업데이트 중 화면
 - 추가적으로 기존 item 컴포넌트의 애니메이션 동작 방식은 moti를 이용했는데, 이는 3~4개의 Layer를 사용하고 무겁기 때문에 **애니메이션을 가볍게 표시하도록 직접 커스텀하여 컴포넌트를 작성했습니다.**
 - 이에 평균 렌더링 시간을 \`1~2초\`로 단축하여 성능을 많이 개선할 수 있었습니다.
 
-![렌더링 성능 개선 전](https://prod-files-secure.s3.us-west-2.amazonaws.com/8bb09b0d-85c3-4e8f-9953-8830a663c22d/e40b2b9e-2395-4e92-b93d-328996b346ce/FlatList_(8).gif)
 
-렌더링 성능 개선 전
-
-![렌더링 성능 개선 후](https://prod-files-secure.s3.us-west-2.amazonaws.com/8bb09b0d-85c3-4e8f-9953-8830a663c22d/34917dfb-78bf-4f16-bc3a-cf7a6ed8888d/Flash_customAnimate.gif)
-
-렌더링 성능 개선 후
+<div style="display: flex; gap: 24px;">
+	<div style="display: flex; flex-direction: column; gap: 4px; text-align: center;">
+		<img src="/img/portfolio/projects/4/before_improve_performance.gif">
+		렌더링 성능 개선 전
+	</div>
+	<div style="display: flex; flex-direction: column; gap: 4px; text-align: center;">
+		<img src="/img/portfolio/projects/4/after_improve_performance.gif">
+		렌더링 성능 개선 후
+	</div>
+</div>
 
 <br />
 <br />
@@ -916,10 +920,7 @@ codepush를 통한 앱 업데이트 중 화면
 
 2024.01 | Typescript, React, Vite, Emotion
 
-https://github.com/uoslife/library-recap
-
-> https://recap.uoslife.com/
-> 
+- [Github link](https://github.com/uoslife/library-recap)
 
 ### 개요
 
@@ -944,7 +945,7 @@ https://github.com/uoslife/library-recap
 		description:
 			"Native Module을 이용해 도서관 이용시간을 알림을 통해 실시간으로 알려주는 기능",
 		category: "시대생",
-		imageUrl: "https://picsum.photos/seed/freelance2/600/400",
+		imageUrl: "/img/portfolio/projects/9/main.png",
 		technologies: [
 			"React Native(Bare)",
 			"iOS Activity Kit",
@@ -968,10 +969,6 @@ https://github.com/uoslife/library-recap
 
 ---
 
-## **소개 및 설명**
-
-![스크린샷 2024-05-24 오후 4.33.37.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/8bb09b0d-85c3-4e8f-9953-8830a663c22d/aecb7045-285d-486c-931f-e694fbed0ebf/e51a15bb-3887-46ef-a6fd-cf86c202699d.png)
-
 ## 개요
 
 ---
@@ -985,20 +982,16 @@ https://github.com/uoslife/library-recap
 ---
 
 - NativeModule을 이용하여 각 OS 별로 기능을 구현했습니다.
-    - **iOS**: Activity Kit (Dynamic Island)
-    - **Android**: Notification
+	- **iOS**: Activity Kit (Dynamic Island)
+	- **Android**: Notification
+
 - Github (PR)
-    - iOS
-        
-        https://github.com/uoslife/uoslife-client/pull/454
-        
-    - Android
-        
-        https://github.com/uoslife/uoslife-client/pull/519
-        
+	- 	[iOS Github link](https://github.com/uoslife/uoslife-client/pull/454)
+	- [Android Github link](https://github.com/uoslife/uoslife-client/pull/519)
+
 - 정리 블로그
-    - [iOS](https://devpluto.tistory.com/entry/React-Native-RN%EC%97%90%EC%84%9C-dynamic-island-%EC%9C%84%EC%A0%AF-%EB%A7%8C%EB%93%A4%EA%B8%B0)
-    - [Android](https://devpluto.tistory.com/entry/React-Native-native-module%EC%9D%84-%EC%9D%B4%EC%9A%A9%ED%95%B4-android-notification-%EB%9D%84%EC%9A%B0%EA%B8%B0)
+	- [iOS](https://devpluto.tistory.com/entry/React-Native-RN%EC%97%90%EC%84%9C-dynamic-island-%EC%9C%84%EC%A0%AF-%EB%A7%8C%EB%93%A4%EA%B8%B0)
+	- [Android](https://devpluto.tistory.com/entry/React-Native-native-module%EC%9D%84-%EC%9D%B4%EC%9A%A9%ED%95%B4-android-notification-%EB%9D%84%EC%9A%B0%EA%B8%B0)
 
 ## 트러블 슈팅
 
@@ -1008,7 +1001,7 @@ https://github.com/uoslife/library-recap
 
 - 알림을 클릭하여 intent를 실행하는 경우 아래 오류가 발생했습니다.
     
-    ![스크린샷 2024-06-07 오후 7.13.16.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/8bb09b0d-85c3-4e8f-9953-8830a663c22d/f0df9125-f2a6-4348-b82e-bd5a88f3ea9f/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2024-06-07_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_7.13.16.png)
+    ![스크린샷 2024-06-07 오후 7.13.16.png](/img/portfolio/projects/9/android_trouble_shooting_01.png)
     
 - broadcastReciever를 이용해 pendingIntent 동작을 수행하는 코드에서 발생하는 문제였습니다. 동작 중 activity를 직접 여는 동작은 **Android 12+부터 불가**해서 발생하는 문제였습니다.
 
@@ -1032,7 +1025,7 @@ var pendingIntent = TaskStackBuilder.create(myContext).run {
 
 - background에서 알림을 클릭했을때는 intent가 실행되어 문제가 없는 반면, foreground에서 클릭했을때는 새로운 intent를 실행해서 앱을 덮어쓰는 현상이 발생했습니다.
     
-    ![ezgif-3-8215a860dc.gif](https://prod-files-secure.s3.us-west-2.amazonaws.com/8bb09b0d-85c3-4e8f-9953-8830a663c22d/cc0bea6c-0142-4aac-abe4-cf01eb82febe/ezgif-3-8215a860dc.gif)
+<img src="/img/portfolio/projects/9/android_trouble_shooting_02.gif" width="40%">
     
 - pendingIntent를 정의하는 방법을 수정하고, 실행할 intent의 Activity Flag를 \`FLAG_ACTIVITY_NEW_TASK\`, \`FLAG_ACTIVITY_SINGLE_TOP\` 속성을 주도록 수정하여 해결했습니다.
 
@@ -1044,6 +1037,17 @@ val intent = Intent(Intent.ACTION_VIEW, "uoslife://library".toUri(), myContext, 
 // notification PendingIntent
 var pendingIntent = PendingIntent.getActivity(myContext, 0, intent, if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) PendingIntent.FLAG_IMMUTABLE else PendingIntent.FLAG_UPDATE_CURRENT)
 \`\`\`
+
+<div style="display: flex; gap: 24px;">
+	<div style="display: flex; flex-direction: column; gap: 4px; text-align: center;">
+		<img src="/img/portfolio/projects/9/native_module_ios.gif">
+		iOS 알림 실행 화면
+	</div>
+	<div style="display: flex; flex-direction: column; gap: 4px; text-align: center;">
+		<img src="/img/portfolio/projects/9/native_module_android.gif">
+		Android 알림 실행 화면
+	</div>
+</div>
 
 `,
 	},
