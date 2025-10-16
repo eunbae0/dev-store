@@ -1153,7 +1153,15 @@ var pendingIntent = PendingIntent.getActivity(myContext, 0, intent, if (Build.VE
 			},
 			{
 				type: "website",
-				url: "https://manna.tistory.com/",
+				url: "https://manna.web.app",
+			},
+			{
+				type: "ios",
+				url: "https://apps.apple.com/us/app/%EB%A7%8C%EB%82%98-%EB%AF%BF%EC%9D%8C%EC%9D%98-%EC%97%AC%EC%A0%95%EC%9D%84-%ED%95%A8%EA%BB%98%ED%95%98%EB%8A%94-%EC%9A%B0%EB%A6%AC%EB%93%A4%EC%9D%98-%EC%86%8C%ED%86%B5-%EA%B3%B5%EA%B0%84/id6744582157",
+			},
+			{
+				type: "android",
+				url: "https://play.google.com/store/apps/details?id=com.eunbae.sogroup",
 			},
 		],
 		content: `# 구현사항
@@ -1177,6 +1185,23 @@ var pendingIntent = PendingIntent.getActivity(myContext, 0, intent, if (Build.VE
 
 ---
 
+## **성능 개선**
+
+- React Native Devtools를 이용해 성능을 개선했습니다.
+
+### Memory 성능 최적화
+
+- 앱의 메모리 사용량을 최대 1000ms에서 550ms로 약 40%를 개선했습니다.
+- React Native Tabs를 사용시, 모든 탭이 리렌더링되는 문제가 있어 이를 라우팅 구조를 변경하여 해결했습니다.
+- 녹음, textinput이 많이 사용되는 페이지에서 리렌더링이 많이 되어 컴포넌트에 메모이제이션을 적용하고, 컴포넌트 자체를 최소화했습니다.
+- JS를 프로파일링하여 중복 코드를 제거하고, 병목이 있는 로직을 제거하는 등의 작업으로 성능을 개선했습니다.
+
+### Caching
+
+- 자주 사용하는 이미지의 cache 저장소를 memory단에 캐시하도록 변경했습니다.
+- Firebase Storage를 이용한 이미지가 캐싱이 되지 않는 문제가 있어, 직접 이미지를 캐시하도록 구현했습니다.
+
+
 ## **주요 기능 및 구현 방식**
 
 ### **1. 앱 초기화 및 유저 정보**
@@ -1187,7 +1212,7 @@ var pendingIntent = PendingIntent.getActivity(myContext, 0, intent, if (Build.VE
 
 - 유저가 일요일 예배의 설교에 대한 나눔지를 생성하고, 그룹원들과 실시간으로 나눔에 대한 답변 공유 및 아카이빙 가능
 
-![fellowships.webp](attachment:d4f4aaf7-c154-4480-b074-313e8e0d55b6:fellowships.webp)
+<img src="/img/portfolio/projects/7/fellowships.webp" width="40%">
 
 ### **3. 자유게시판 / 공지사항**
 
@@ -1197,7 +1222,7 @@ var pendingIntent = PendingIntent.getActivity(myContext, 0, intent, if (Build.VE
     - 투표 및 일정 등의 추가 요소를 elements에 확장성 있게 관리
     - NoSQL 기반의 database 성능 최적화를 위해 reaction, comment 등의 count를 집계하도록 구현
 
-![게시글 작성 및 조회, 댓글 작성](attachment:4b7fbf51-13fa-4b50-8341-e375c7d9eee9:ezgif-73cc9ab6753ae7.gif)
+<img src="/img/portfolio/projects/7/post.gif" width="40%">
 
 게시글 작성 및 조회, 댓글 작성
 
@@ -1255,7 +1280,7 @@ var pendingIntent = PendingIntent.getActivity(myContext, 0, intent, if (Build.VE
 		`,
 	},
 	{
-		id: 9,
+		id: 10,
 		title: "tiny-equal",
 		description: "가장 빠른 성능을 제공하는 equal 함수 오픈소스 패키지",
 		category: "개인",
