@@ -285,6 +285,29 @@ const ProjectsSection = () => {
 	);
 };
 
+const SkillsSection = () => {
+	return (
+		<motion.section
+			className="bg-lime-50/40 dark:bg-gray-900 px-8"
+			initial={{ opacity: 0 }}
+			whileInView={{ opacity: 1 }}
+			viewport={{ once: true, amount: 0.1 }}
+			transition={{ duration: 0.5 }}
+		>
+			<div className="py-20 max-w-7xl mx-auto">
+				<h1 className="!mb-12">
+					<span className="text-6xl font-bold pb-2">Skills</span>
+				</h1>
+				<div className="">
+					<ReactMarkdown rehypePlugins={[rehypeRaw]}>
+						{skillsMarkdown}
+					</ReactMarkdown>
+				</div>
+			</div>
+		</motion.section>
+	);
+};
+
 const RecommendArticleSection = () => {
 	return (
 		<motion.section
@@ -585,6 +608,7 @@ export default function Portfolio() {
 					<AnimatePresence>
 						<ProjectModal project={data} onClose={handleClose} />
 					</AnimatePresence>
+					<SkillsSection />
 					<RecommendArticleSection />
 				</main>
 			</div>
@@ -1395,3 +1419,42 @@ const projectCategories = {
 	외주: projects.filter((p) => p.category === "외주"),
 	개인: projects.filter((p) => p.category === "개인"),
 };
+
+const skillsMarkdown = `
+### **HTML / CSS**
+
+	· Sementic markup을 준수하며 CSS를 다루는데 능숙합니다.
+	· styled-component, emotion과 같은 css-in-js 라이브러리를 다루는데 능숙합니다.
+
+<br />
+
+### **Javascript**
+	· ES6+ 이후의 문법에 익숙하며 Reduce, Map과 같은 고차함수를 적극적으로 사용합니다.
+	· promise를 이용한 비동기 작업에 익숙합니다.
+
+<br />
+
+### **Typescript**
+	· 문법을 잘 이해하고 적절한 타입을 활용하며 Generic에 익숙합니다.
+	· 타입 안정성과 높은 생산성 때문에 선호합니다.
+
+<br />
+
+### **React**
+	· 리액트의 Atomic, Compound pattern, custom hook 등을 이해하고 잘 다룹니다.
+	· justand, jotai 등의 상태관리 라이브러리를 사용하는데 익숙합니다.
+	· 서비스에 맞는 좋은 구조에 대해 항상 고민합니다.
+
+<br />
+
+### **TailwindCSS & Emotion**
+	· 빠른 스타일링과 높은 생산성을 위해 Tailwind CSS를 주로 사용합니다.
+	· 코드의 일관성을 유지하기 위해 주로 Component 기반으로 스타일을 구성하지만, css prop을 활용한 유연한 스타일링이 가능하다는 점에서 Emotion도 종종 사용합니다.
+
+<br />
+
+### **Etc**
+	· React Native, Next.js, SwiftUI
+	· Cursor, Windsurf
+	· Jotai, React-query, Vite, Storybook
+`;
