@@ -1,20 +1,20 @@
-import ReactMarkdown from "react-markdown";
-import Layout from "@theme/Layout";
 import useBaseUrl from "@docusaurus/useBaseUrl";
-import { motion, AnimatePresence } from "framer-motion";
+import Layout from "@theme/Layout";
+import { AnimatePresence, motion } from "framer-motion";
+import { useCallback, useEffect, useRef, useState } from "react";
 import {
-	FaGithub,
-	FaEnvelope,
-	FaPlus,
-	FaArrowDown,
-	FaChevronRight,
-	FaAppStore,
 	FaAndroid,
+	FaAppStore,
+	FaArrowDown,
 	FaChevronDown,
+	FaChevronRight,
+	FaEnvelope,
+	FaGithub,
+	FaPlus,
 } from "react-icons/fa";
 import { FaAnglesDown, FaLink, FaSignsPost } from "react-icons/fa6";
+import ReactMarkdown from "react-markdown";
 import { TypeAnimation } from "react-type-animation";
-import { useRef, useCallback, useState, useEffect } from "react";
 import rehypeRaw from "rehype-raw";
 
 // --- Helper Components ---
@@ -1112,22 +1112,71 @@ var pendingIntent = PendingIntent.getActivity(myContext, 0, intent, if (Build.VE
 	},
 	{
 		id: 6,
-		title: "Pocker Hand History",
+		title: "Poker Hand History",
 		description: "텍사스 홀덤 포커의 패 기록 및 커뮤니티 공유 앱",
 		category: "외주",
-		period: "2023.07~2023.08",
-		imageUrl: "https://picsum.photos/seed/freelance2/600/400",
+		period: "2025.09~2025.11",
+		imageUrl: "/img/portfolio/projects/6/main.webp",
 		technologies: ["React Native(EAS)", "Supabase", "TS"],
 		links: [
 			{
 				type: "ios",
-				url: "https://apps.apple.com/kr/app/%ED%84%B0%EB%8B%9D-%EC%95%B1-%EC%9E%A0%EA%B8%88-%ED%8F%B0-%EC%9E%A0%EA%B8%88-%EA%B3%B5%EB%B6%80-%EC%A7%91%EC%A4%91-%ED%83%80%EC%9D%B4%EB%A8%B8-%EB%A3%A8%ED%8B%B4/id6449270376",
+				url: "https://apps.apple.com/kr/app/poker-hand-history-app/id6744484636",
 			},
 		],
 		content: `# 구현사항
 
 ---
 
+- React Native Expo를 이용한 기존 프로젝트의 유지보수 및 신규 기능 개발
+
+## 유지보수 및 기능 개발
+
+- Supabase 기반 Apple, Google Signin 기능 구현
+- Expo Notification기반 iOS & Android push notification 셋업
+- EAS updates를 이용한 앱 업데이트 구현
+- iOS & Android 빌드 및 스토어 배포
+
+### 성능 개선
+
+- 포커 로깅 process에서 최대 800ms의 메모리 성능을 개선하기위해 devtools를 활용하여 병목이 있는 컴포넌트를 memoization 및 이미지 캐싱 등의 작업을 통해 300ms까지 개선
+- API 호출시 React Query를 이용하여 상태를 선언적으로 관리하도록 변경
+- react compiler를 도입하여 성능 개선
+`,
+	},
+	{
+		id: 11,
+		title: "Popcorn List",
+		description: "TMDB API를 이용한 영화 & TV 시리즈 평가 및 추천 커뮤니티 앱",
+		category: "외주",
+		period: "2025.09~2025.11",
+		imageUrl: "/img/portfolio/projects/11/main.webp",
+		technologies: ["React Native(EAS)", "Supabase", "TS"],
+		links: [
+			{
+				type: "ios",
+				url: "https://apps.apple.com/kr/app/popcorn-list-rank-movies-tv/id6744907475",
+			},
+		],
+		content: `# 구현사항
+
+---
+
+- React Native Expo를 이용한 기존 프로젝트의 유지보수 및 신규 기능 개발
+
+## 유지보수 및 기능 개발
+
+- 앱 시작시 로그인 화면 구현
+- Supabase 기반 Apple, Google Signin 기능 구현
+- Expo Notification기반 iOS & Android push notification 셋업
+- EAS updates를 이용한 앱 업데이트 구현
+- iOS & Android 빌드 및 스토어 배포
+
+### 성능 개선
+
+- 유저 조회시 로딩 시간을 줄이기 위해 API 호출 횟수를 제한하고 batching처리하도록 구현, Skeleton UI를 필요한 정보만 렌더링하도록 구현
+- API 호출시 React Query를 이용하여 상태를 선언적으로 관리하도록 변경
+- react compiler를 도입하여 성능 개선
 `,
 	},
 	{
