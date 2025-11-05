@@ -6,7 +6,6 @@ import {
 	FaAndroid,
 	FaAppStore,
 	FaArrowDown,
-	FaChevronDown,
 	FaChevronRight,
 	FaEnvelope,
 	FaGithub,
@@ -16,6 +15,8 @@ import { FaAnglesDown, FaLink, FaSignsPost } from "react-icons/fa6";
 import ReactMarkdown from "react-markdown";
 import { TypeAnimation } from "react-type-animation";
 import rehypeRaw from "rehype-raw";
+import { RecommendedArticleList } from "../components/HomepageFeatures/data";
+import RecommendedArticle from "../components/RecommendedArticle";
 
 // --- Helper Components ---
 
@@ -279,6 +280,37 @@ const ProjectsSection = () => {
 							<ProjectCategory key={title} title={title} projects={projects} />
 						)
 				)}
+			</div>
+		</motion.section>
+	);
+};
+
+const RecommendArticleSection = () => {
+	return (
+		<motion.section
+			className="bg-lime-50/40 dark:bg-gray-900 px-8"
+			initial={{ opacity: 0 }}
+			whileInView={{ opacity: 1 }}
+			viewport={{ once: true, amount: 0.1 }}
+			transition={{ duration: 0.5 }}
+		>
+			<div className="py-20 max-w-7xl mx-auto">
+				<h1 className="!mb-12">
+					<span className="text-6xl font-bold pb-2">Recommend Articles</span>
+				</h1>
+				<div className="grid gap-x-4 gap-y-5 grid-cols-3">
+					{RecommendedArticleList.filter(
+						({ to }) =>
+							!to.includes("react-native-optimization") && !to.includes("만나")
+					).map(({ to, title, description, image }) => (
+						<RecommendedArticle
+							to={to}
+							title={title}
+							description={description}
+							image={image}
+						/>
+					))}
+				</div>
 			</div>
 		</motion.section>
 	);
@@ -553,6 +585,7 @@ export default function Portfolio() {
 					<AnimatePresence>
 						<ProjectModal project={data} onClose={handleClose} />
 					</AnimatePresence>
+					<RecommendArticleSection />
 				</main>
 			</div>
 		</Layout>
